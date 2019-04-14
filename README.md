@@ -1,0 +1,1 @@
+# WP-to-enter-the-values-of-three-variables-and-display-the-output-of-following-operation-P-q-r-
