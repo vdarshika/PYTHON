@@ -1,0 +1,3 @@
+s=input("eneter a string:")
+for i in range(-1,-len(s)):
+    print(s[i])
