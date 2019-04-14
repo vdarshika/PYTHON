@@ -1,0 +1,29 @@
+stack=[]
+n=int(input("enter elements of stack"))
+top=0
+def push():
+    global top
+    print(top)
+    if(top>n-1):
+        print("stack is full")
+    else:
+        x=int(input("enter the no. to be entered"))
+        top=top+1
+        stack.append(x) 
+def pop2():
+    global top
+    if(top==-1):
+        print("stack is empty")
+    else:
+        print("deleted number",stack.pop())
+        top=top-1
+print("1=PUSH  2=POP  3=EXIT")
+while(True):
+    z=int(input("select an option"))
+    if(z==1):
+          push()
+    elif(z==2):
+          pop2()
+    elif(z==3):
+          print("exit the program")
+    
