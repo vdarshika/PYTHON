@@ -1,0 +1,28 @@
+queue=[]
+n=int(input("enter size of queue"))
+rear=0
+front=0
+def enqueue():
+    global rear
+    if(rear>n-1):
+        print("queue is full")
+    else:
+        x=int(input("enter the no. to be entered"))
+        rear=rear+1
+        queue.append(x) 
+def dequeue():
+    global front
+    if(front==-1 or front==rear):
+        print("queue is empty")
+    else:
+        print("deleted number",queue[front])
+        front=front+1
+print("1=ENQUEUE  2=DEQUEUE  3=EXIT")
+while(True):
+    z=int(input("select an option"))
+    if(z==1):
+          enqueue()
+    elif(z==2):
+          dequeue()
+    elif(z==3):
+          print("exit the program")
