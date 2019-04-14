@@ -1,0 +1,4 @@
+t=(1,5,3,8,6,7,2)
+
+t=sorted(t)
+print("Sorted tuple=",t)
