@@ -1,0 +1,4 @@
+L1=[1, 2, 3, 4 ,5 ,6, 7, 8]
+L2=[ 'Amit', 'Sumit', 'rohit', 'sudha','swapna', 'reena', 'meena' , 'geeta']
+r=zip(L1,L2)
+print(tuple(r))
