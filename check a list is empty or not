@@ -1,0 +1,5 @@
+list=input("enter elements of list:").split()
+if(len(list)==0):
+    print("List is empty")
+else:
+    print("List is not empty")
