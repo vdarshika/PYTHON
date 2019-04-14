@@ -1,0 +1,9 @@
+l=input("Enter elements of list:").split()
+print("Original List=",l)
+r=l[::-1]
+print("Reversed List=",r)
+sum=[]
+for i in range(0,len(l)):
+    s=int(l[i])+int(r[i])
+    sum.append(s)
+print("Sum=",sum)
