@@ -1,0 +1,44 @@
+class Time:
+    def __init__(self):
+        self.time_hour = 0
+        self.time_minute = 0
+        self.time_sec = 0
+
+    def showTime(self):
+        print("The time is : ", self.time_hour, ":", self.time_minute, ":", self.time_sec)
+
+    def getTime(self, a, b, c):
+        self.time_hour = a
+        self.time_minute = b
+        self.time_sec = c
+        self.showTime()
+
+
+print("Choose from following options :")
+
+print("1. Set Time ")
+
+print("2. Show Time ")
+time = Time()
+
+d = int(input("Enter (1 or 2): "))
+if d == 1:
+    a = int(input("Enter the hours : "))
+    b = int(input("Enter the minutes : "))
+    c = int(input("Enter the seconds : "))
+    time.getTime(a, b, c)
+elif d == 2:
+    time.showTime()
+else:
+print("Wrong choice")
+
+OUTPUT:
+Choose from following options :
+1. Set Time 
+2. Show Time 
+Enter (1 or 2): 1
+Enter the hours : 2
+Enter the minutes : 23
+
+Enter the seconds : 0
+('The time is : ', 2, ':', 23, ':', 0)
