@@ -1,0 +1,21 @@
+class EmailSlicer:
+    def __init__(self, n):
+        self.email_id = n
+        self.user_name = ""
+        self.domain_name = ""
+    def getUser(self):
+        A = self.email_id.partition("@")
+    
+    self.user_name = A[0]
+        self.domain_name = A[2]
+        return  self.user_name
+    def getDomain(self):
+        return self.domain_name
+s = input("Enter the email id : ")
+ob = EmailSlicer(s)
+print("User name is : ", ob.getUser())
+print("Domain name is : ", ob.getDomain())
+OUTPUT:
+Enter the email id : "tom@gmail.com"
+('User name is : ', 'tom')
+('Domain name is : ', 'gmail.com')
