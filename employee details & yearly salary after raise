@@ -1,0 +1,44 @@
+class Employee:
+    def __init__(self):
+        self.firstname = ""
+        self.lastname = ""
+        self.monthly_salary = 0.0
+    def set(self, a, b, c):
+        self.firstname = a
+        self.lastname = b
+  
+      if c >=0 :
+            self.monthly_salary =c
+    def details(self):
+        print("Name of Employee is : ", self.firstname, self.lastname)
+        print("Monthly salary is : ", self.monthly_salary)
+    def yearly(self):
+        return 12*self.monthly_salary
+    def Raise(self, b):
+         self.monthly_salary = self.monthly_salary+((b * self.monthly_salary)/100)
+
+q =input("Enter the first name of employee : ")
+
+w = input("Enter the last name of employee : ")
+e = float(input("Enter salary of employee : "))
+ob = Employee()
+ob.set(q, w, e)
+ob.details()
+print("yearly salary is :", ob.yearly())
+t = float(input("Enter the percentage of raise :"))
+ob.Raise(t)
+ob.details()
+print("yearly salary is :", ob.yearly())
+
+OUTPUT:
+Enter the first name of employee : "Tom "
+Enter the last name of employee : "Smith"
+Enter salary of employee : 200000
+('Name of Employee is : ', 'Tom', 'Smith')
+('Monthly salary is : ', 200000.0)
+('yearly salary is :', 2400000.0)
+Enter the percentage of raise :12
+('Name of Employee is : ', '
+OUTPUT:(‘Tom', 'Smith')
+('Monthly salary is : ', 224000.0)
+('yearly salary is :', 2688000.0)
