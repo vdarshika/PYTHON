@@ -1,0 +1,23 @@
+class Rectangle:
+    def __init__(self):
+        self.breadth = 0.0
+        self.length = 0.0
+
+    def input(self, l, b):
+        self.length = l
+        self.breadth = b
+
+    def area(self):
+        return self.length * self.breadth
+a = float(input("Enter the length of rectangle :"))
+b = float(input("Enter the breadth of rectangle :"))
+r = Rectangle()
+r.input(a, b)
+print("The area of rectangle is :", r.area())
+
+
+OUTPUT:
+Enter the length of rectangle :5
+
+Enter the breadth of rectangle :3
+('The area of rectangle is :', 15.0)
