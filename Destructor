@@ -1,0 +1,13 @@
+PROGRAM:
+class Student:
+    def __init__(self):
+        print("Student created")
+    def __del__(self):
+        print("Destructor called , Student deleted")
+object = Student()
+del object
+
+
+OUTPUT:
+Student created
+Destructor called , Student deleted
